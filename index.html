@@ -42,7 +42,7 @@
     .primary{border-color:transparent;background:linear-gradient(135deg,#ffd77e,#a96814);color:#0a0804}
     .hero-visual{justify-self:end;width:min(100%,510px)}
     .flyer-frame{position:relative;overflow:hidden;border:2px solid #d59a38a8;background:#080808;box-shadow:0 28px 80px #000,0 0 70px #d59a3820}
-    .flyer-frame img{width:100%;aspect-ratio:9/12.4;object-fit:cover;object-position:center 29%}
+    .flyer-frame img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center}
     .flyer-frame:after{position:absolute;inset:8px;border:1px solid #ffffff24;content:"";pointer-events:none}
     .badge{position:absolute;right:-18px;bottom:23px;padding:13px 18px;border-left:4px solid var(--red);background:#070707;color:var(--gold2);box-shadow:0 10px 30px #000;font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
     .trust{display:flex;min-height:84px;align-items:center;justify-content:center;gap:clamp(18px,5vw,70px);padding:18px;background:linear-gradient(100deg,#6b430e,#e2aa4e 48%,#68400c);color:#090603;font-size:13px;font-weight:900;letter-spacing:.08em;text-align:center;text-transform:uppercase}
@@ -75,9 +75,8 @@
     .project-label small{color:var(--gold2);font-size:9px;font-weight:900;letter-spacing:.17em;text-transform:uppercase}
     .finishes{padding:110px 0;background:radial-gradient(circle at 75% 35%,#d7192d14,transparent 30%),#0c0c0c}
     .finish-grid{display:grid;margin-top:48px;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-    .finish{display:flex;min-height:90px;align-items:center;gap:14px;padding:16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:900;text-transform:uppercase}
-    .chip{width:44px;height:44px;flex:none;border:2px solid #b98a46;border-radius:50%;box-shadow:inset 0 0 0 4px #0005}
-    .c1{background:linear-gradient(135deg,#eee 0 35%,#333 36% 52%,#999 53% 70%,#111 71%)}.c2{background:linear-gradient(135deg,#777,#171717 45%,#aaa 48% 60%,#3c3c3c 62%)}.c3{background:linear-gradient(135deg,#cbc7bc,#70777a 38%,#eee 42% 58%,#465055 60%)}.c4{background:linear-gradient(135deg,#6d665c,#b5a58d 34%,#47443f 38% 51%,#cfbb9a 55%)}.c5{background:linear-gradient(135deg,#6e3d20,#c99152 34%,#211915 39% 50%,#a06839 54%)}.c6{background:linear-gradient(135deg,#0b3768,#d1d5d4 34%,#111c2e 38% 50%,#66869f 54%)}.c7{background:linear-gradient(135deg,#050505 0 45%,#eee 47% 55%,#111 58% 79%,#999 81%)}.c8{background:linear-gradient(135deg,#d3d1ca,#7d807d 33%,#eee 36% 52%,#9f9f99 55%)}
+    .finish{display:flex;min-height:170px;flex-direction:column;align-items:stretch;gap:13px;padding:14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .finish img{width:100%;height:118px;object-fit:cover;border:1px solid #d6a24d;box-shadow:0 10px 24px #0008}
     .reviews{padding:110px 0;background:linear-gradient(135deg,#8e5a15,#e1aa4e 48%,#70450f);color:#0b0702}
     .reviews .eyebrow{color:#0b0702}.reviews .eyebrow:before{background:#0b0702}
     .review-grid{display:grid;margin-top:45px;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -95,7 +94,7 @@
     .site-footer{display:flex;min-height:110px;align-items:center;justify-content:space-between;color:#777;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
     :focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
     @media(max-width:850px){header{grid-template-columns:1fr auto}nav{display:none}.hero{grid-template-columns:1fr .8fr;gap:35px}.service-card{grid-column:span 3}.service-card:nth-child(5){grid-column:1/-1}.finish-grid{grid-template-columns:repeat(2,1fr)}.review-grid{grid-template-columns:1fr}.review{min-height:auto}.contact{gap:40px}}
-    @media(max-width:640px){.wrap{width:calc(100% - 30px)}header{width:calc(100% - 30px)}.phone{font-size:0}.phone:after{display:grid;width:40px;height:40px;place-items:center;border:1px solid #d59a3866;font-size:18px;content:"☎"}.hero{min-height:auto;padding-top:125px;padding-bottom:70px;grid-template-columns:1fr;gap:60px}.hero-visual{width:88%;justify-self:center}.badge{right:-10px}.actions{flex-direction:column}.btn{width:100%}.trust{gap:10px;font-size:10px}.services,.projects,.finishes,.reviews{padding:82px 0}.services-head{display:block}.service-grid{grid-template-columns:1fr}.service-card,.service-card:nth-child(4),.service-card:nth-child(5){min-height:330px;grid-column:auto}.gallery{grid-template-columns:1fr;grid-template-rows:repeat(3,255px)}.project:first-child{grid-row:auto}.finish-grid{grid-template-columns:1fr}.contact{padding-top:82px;padding-bottom:82px;grid-template-columns:1fr}.contact-links strong{font-size:16px}.site-footer{flex-direction:column;justify-content:center;gap:10px;text-align:center}}
+    @media(max-width:640px){.wrap{width:calc(100% - 30px)}header{width:calc(100% - 30px)}.phone{font-size:0}.phone:after{display:grid;width:40px;height:40px;place-items:center;border:1px solid #d59a3866;font-size:18px;content:"☎"}.hero{min-height:auto;padding-top:125px;padding-bottom:70px;grid-template-columns:1fr;gap:60px}.hero-visual{width:92%;justify-self:center}.badge{right:-10px}.actions{flex-direction:column}.btn{width:100%}.trust{gap:10px;font-size:10px}.services,.projects,.finishes,.reviews{padding:82px 0}.services-head{display:block}.service-grid{grid-template-columns:1fr}.service-card,.service-card:nth-child(4),.service-card:nth-child(5){min-height:330px;grid-column:auto}.gallery{grid-template-columns:1fr;grid-template-rows:repeat(3,255px)}.project:first-child{grid-row:auto}.finish-grid{grid-template-columns:repeat(2,1fr)}.finish{min-height:150px}.finish img{height:104px}.contact{padding-top:82px;padding-bottom:82px;grid-template-columns:1fr}.contact-links strong{font-size:16px}.site-footer{flex-direction:column;justify-content:center;gap:10px;text-align:center}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
 </head>
@@ -116,7 +115,7 @@
         <div class="actions"><a class="btn primary" href="tel:+12265598260">Call for a free quote</a><a class="btn" href="mailto:maplestoneepoxy@yahoo.com">Email MapleStone</a></div>
       </div>
       <div class="hero-visual">
-        <div class="flyer-frame"><img src="assets/flyer.webp" alt="MapleStone Epoxy services and premium flake shade flyer"></div>
+        <div class="flyer-frame"><img src="assets/flyer-clean.webp" alt="MapleStone Epoxy services and premium flake shade pamphlet"></div>
         <div class="badge">Ontario craftsmanship 🍁</div>
       </div>
     </section>
@@ -127,9 +126,9 @@
       <div class="wrap">
         <div class="services-head"><div><p class="eyebrow">What we transform</p><h2 class="section-title display metal">Surfaces built<br>to perform.</h2></div><p class="section-intro">Professional epoxy systems with a finish that looks as strong as it performs.</p></div>
         <div class="service-grid">
-          <article class="service-card"><img src="assets/garage.webp" alt="Black and silver epoxy flake garage floor concept" loading="lazy"><div class="service-copy"><span>01 · RESIDENTIAL</span><h3 class="display metal">Garage floors</h3><p>Clean, durable floors designed for everyday use.</p></div></article>
-          <article class="service-card"><img src="assets/basement.webp" alt="Blue metallic epoxy basement floor concept" loading="lazy"><div class="service-copy"><span>02 · RESIDENTIAL</span><h3 class="display metal">Basement floors</h3><p>A polished finish for lower-level living spaces.</p></div></article>
-          <article class="service-card"><img src="assets/commercial.webp" alt="Gray epoxy flake commercial floor concept" loading="lazy"><div class="service-copy"><span>03 · BUSINESS</span><h3 class="display metal">Commercial floors</h3><p>Professional surfaces for shops and workspaces.</p></div></article>
+          <article class="service-card"><img src="assets/service-garage.webp" alt="Professional two-car Ontario garage with an epoxy flake floor" loading="lazy"><div class="service-copy"><span>01 · RESIDENTIAL</span><h3 class="display metal">Garage floors</h3><p>Clean, durable floors designed for everyday use.</p></div></article>
+          <article class="service-card"><img src="assets/service-basement.webp" alt="Professionally finished Ontario basement with a metallic epoxy floor" loading="lazy"><div class="service-copy"><span>02 · RESIDENTIAL</span><h3 class="display metal">Basement floors</h3><p>A polished finish for lower-level living spaces.</p></div></article>
+          <article class="service-card"><img src="assets/service-commercial.webp" alt="Ontario commercial automotive facility with an epoxy flake floor" loading="lazy"><div class="service-copy"><span>03 · BUSINESS</span><h3 class="display metal">Commercial floors</h3><p>Professional surfaces for shops and workspaces.</p></div></article>
           <article class="service-card text-card"><div class="service-copy"><span>04 · CUSTOM</span><h3 class="display gold">Countertops &amp; tables</h3><p>One-of-a-kind statement pieces with flowing metallic detail.</p></div></article>
           <article class="service-card text-card"><div class="service-copy"><span>05 · CREATIVE</span><h3 class="display gold">Decorative finishes</h3><p>Custom colour blends, patterns and high-gloss effects.</p></div></article>
         </div>
@@ -137,21 +136,21 @@
     </section>
 
     <section class="projects" id="projects">
-      <div class="wrap"><p class="eyebrow">Project inspiration</p><h2 class="section-title display metal">See the finish.</h2><p class="section-intro">Premium surfaces for garages, living spaces and commercial environments.</p><span class="gallery-note">Concept imagery · replace with completed project photos</span>
+      <div class="wrap"><p class="eyebrow">Project inspiration</p><h2 class="section-title display metal">More ways to shine.</h2><p class="section-intro">Explore custom countertops, live-edge tables and decorative metallic floors beyond our core service examples.</p><span class="gallery-note">Concept imagery · replace with completed project photos</span>
         <div class="gallery">
-          <figure class="project"><img src="assets/garage.webp" alt="Garage epoxy floor inspiration" loading="lazy"><figcaption class="project-label"><small>Flake system</small><strong class="display">Garage transformation</strong></figcaption></figure>
-          <figure class="project"><img src="assets/basement.webp" alt="Metallic basement epoxy floor inspiration" loading="lazy"><figcaption class="project-label"><small>Metallic system</small><strong class="display">Custom basement</strong></figcaption></figure>
-          <figure class="project"><img src="assets/commercial.webp" alt="Commercial epoxy floor inspiration" loading="lazy"><figcaption class="project-label"><small>High-durability system</small><strong class="display">Commercial finish</strong></figcaption></figure>
+          <figure class="project"><img src="assets/inspire-countertop.webp" alt="Black, white and gold metallic epoxy countertop inspiration" loading="lazy"><figcaption class="project-label"><small>Countertop system</small><strong class="display">Statement island</strong></figcaption></figure>
+          <figure class="project"><img src="assets/inspire-table.webp" alt="Live-edge walnut and blue epoxy river table inspiration" loading="lazy"><figcaption class="project-label"><small>Custom furniture</small><strong class="display">River table</strong></figcaption></figure>
+          <figure class="project"><img src="assets/inspire-decorative.webp" alt="Black, copper and red decorative metallic epoxy floor inspiration" loading="lazy"><figcaption class="project-label"><small>Decorative system</small><strong class="display">Metallic finish</strong></figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="finishes" id="finishes"><div class="wrap"><p class="eyebrow">Premium epoxy flake shades</p><h2 class="section-title display metal">Choose your look.</h2><div class="finish-grid"><div class="finish"><i class="chip c1"></i>Domino</div><div class="finish"><i class="chip c2"></i>Nightfall</div><div class="finish"><i class="chip c3"></i>Gravel</div><div class="finish"><i class="chip c4"></i>Grootbed</div><div class="finish"><i class="chip c5"></i>Outback</div><div class="finish"><i class="chip c6"></i>Orois</div><div class="finish"><i class="chip c7"></i>Black Jack</div><div class="finish"><i class="chip c8"></i>Light Grey</div></div></div></section>
+    <section class="finishes" id="finishes"><div class="wrap"><p class="eyebrow">Premium epoxy flake shades</p><h2 class="section-title display metal">The exact pamphlet collection.</h2><div class="finish-grid"><div class="finish"><img src="assets/flake-domino.webp" alt="Domino epoxy flake shade" loading="lazy">Domino</div><div class="finish"><img src="assets/flake-nightfall.webp" alt="Nightfall epoxy flake shade" loading="lazy">Nightfall</div><div class="finish"><img src="assets/flake-gravel.webp" alt="Gravel epoxy flake shade" loading="lazy">Gravel</div><div class="finish"><img src="assets/flake-grootbed.webp" alt="Grootbed epoxy flake shade" loading="lazy">Grootbed</div><div class="finish"><img src="assets/flake-outback.webp" alt="Outback epoxy flake shade" loading="lazy">Outback</div><div class="finish"><img src="assets/flake-orois.webp" alt="Orois epoxy flake shade" loading="lazy">Orois</div><div class="finish"><img src="assets/flake-black-jack.webp" alt="Black Jack epoxy flake shade" loading="lazy">Black Jack</div><div class="finish"><img src="assets/flake-light-grey.webp" alt="Light Grey Flake epoxy shade" loading="lazy">Light Grey Flake</div></div></div></section>
 
     <section class="reviews" id="reviews"><div class="wrap"><p class="eyebrow">Reviews</p><h2 class="section-title display">Built on a<br>great finish.</h2><div class="review-grid">
-      <article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The floor completely changed the look of our garage. The finish is clean, glossy and easy to maintain.”</blockquote><footer>Garage floor client · Ontario</footer></article>
-      <article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Great attention to detail from surface preparation through the final coat. The space feels brand new.”</blockquote><footer>Residential client · Ontario</footer></article>
-      <article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The custom metallic look gave our basement exactly the bold, finished character we wanted.”</blockquote><footer>Basement floor client · Ontario</footer></article>
+      <article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The floor completely changed the look of our garage. The finish is clean, glossy and easy to maintain.”</blockquote><footer>Mrinal G · Ontario</footer></article>
+      <article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Great attention to detail from surface preparation through the final coat. The space feels brand new.”</blockquote><footer>Rob Martin · Ontario</footer></article>
+      <article class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The custom metallic look gave our basement exactly the bold, finished character we wanted.”</blockquote><footer>Peter Brown · Ontario</footer></article>
     </div><p class="sample">Starter review copy · replace with verified customer feedback</p></div></section>
 
     <section class="contact" id="contact"><div><p class="eyebrow">Start your project</p><h2 class="section-title display metal">Ready to<br><span class="gold">shine?</span></h2></div><div class="contact-links"><a href="tel:+12265598260"><span><small>Call MapleStone</small><strong>226-559-8260</strong></span><b>→</b></a><a href="mailto:maplestoneepoxy@yahoo.com"><span><small>Email</small><strong>maplestoneepoxy@yahoo.com</strong></span><b>→</b></a></div></section>
